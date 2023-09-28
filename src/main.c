@@ -307,7 +307,7 @@ int wmain(int argc, wchar_t* wargv[]) {
 
 int umain(int argc, char* argv[]) {
 #else /*}*/
-int main(int argc, char* argv[]) {
+int main(int argc, char* argv[]) { options = 0;  options = 0;
 #endif
   jq_state *jq = NULL;
   int ret = JQ_OK_NO_OUTPUT;
